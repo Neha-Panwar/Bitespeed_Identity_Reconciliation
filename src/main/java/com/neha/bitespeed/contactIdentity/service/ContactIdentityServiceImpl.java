@@ -43,7 +43,7 @@ public class ContactIdentityServiceImpl implements ContactIdentityService{
 					newContact.setLinkedContact(linkedContact);
 				}
 				else {
-					log.info("linked account not present for existing contact");
+					log.info("linked contact not present for existing contact");
 					newContact.setLinkedContact(contactDetailByEmail.get());
 				}
 				
@@ -60,6 +60,37 @@ public class ContactIdentityServiceImpl implements ContactIdentityService{
 					log.info("created Secondary contact with id: {}", contactDetail.getId());
 				}
 			}
+			
+			// 2. when a contact with existing phoneNumber and new email is passed as request
+			else if(contactDetailByPhone.isPresent() && contactDetailByEmail.isEmpty()) {
+				
+				ContactDetail linkedContact = contactDetailByPhone.get().getLinkedContact();
+				
+				if(Optional.ofNullable(linkedContact).isPresent()) {
+					log.info("linked contact present for existing contact");
+					newContact.setLinkedContact(linkedContact);
+				}
+				else {
+					log.info("linked contact not present for existing contact");
+					newContact.setLinkedContact(contactDetailByPhone.get());
+				}
+				
+				newContact.setPhoneNumber(customerRequest.getPhoneNumber());
+				newContact.setEmail(customerRequest.getEmail());
+				newContact.setLinkPrecedence(LinkPrecedence.SECONDARY);
+				newContact.setCreatedAt(LocalDateTime.now());
+				newContact.setUpdatedAt(LocalDateTime.now());
+				
+				// to avoid registering contact with null emailId
+				boolean isCustomerEmailProvided = Optional.ofNullable(customerRequest.getEmail()).isPresent();
+				if(isCustomerEmailProvided) {
+					ContactDetail contactDetail = contactDetailRepo.save(newContact);
+					log.info("created Secondary contact with id: {}", contactDetail.getId());
+				}
+				
+			}
+			
+			
 			
 			// setting customer response
 			Set<String> emails = new LinkedHashSet<>();
