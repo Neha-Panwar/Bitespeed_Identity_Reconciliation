@@ -7,5 +7,9 @@ import com.neha.bitespeed.contactIdentity.model.ContactDetail;
 
 @Repository
 public interface ContactDetailRepository extends JpaRepository<ContactDetail, Integer>{
+	
+	boolean existsByPhoneNumber(String phoneNumber);
+
+	boolean existsByEmail(String email);
 
 }
