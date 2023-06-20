@@ -54,3 +54,124 @@
 2023-06-20_20:20:51 [http-nio-8000-exec-6] INFO  c.n.b.c.s.ContactIdentityServiceImpl - linked contact not present for existing contact
 2023-06-20_20:20:51 [http-nio-8000-exec-9] INFO  c.n.b.c.s.ContactIdentityServiceImpl - created Primary contact with id: 3
 2023-06-20_20:20:51 [http-nio-8000-exec-10] INFO  c.n.b.c.s.ContactIdentityServiceImpl - updated contact with id: 3 to secondary
+2023-06-20_20:43:11 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Starting ContactIdentityServiceApplication using Java 11.0.9 on LAPTOP-M0KEA9MF with PID 10244 (D:\Neha\BiteSpeed\contact-identity-service\target\classes started by HP in D:\Neha\BiteSpeed\contact-identity-service)
+2023-06-20_20:43:11 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interfaces.
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-06-20_20:43:11 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:43:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-20_20:43:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-20_20:43:11 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/contact] - Initializing Spring embedded WebApplicationContext
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3533 ms
+2023-06-20_20:43:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-06-20_20:43:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/db'. Database available at 'jdbc:h2:mem:contactDB'
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20_20:43:11 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:43:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path '/contact'
+2023-06-20_20:43:11 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Started ContactIdentityServiceApplication in 8.52 seconds (JVM running for 9.552)
+2023-06-20_20:43:11 [http-nio-8000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/contact] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20_20:43:11 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-20_20:43:11 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-06-20_20:43:11 [http-nio-8000-exec-10] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 612 ms
+2023-06-20_20:43:11 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-20_20:43:11 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:43:11 [Thread-6] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-06-20_20:43:11 [Thread-6] INFO  o.a.c.c.C.[.[localhost].[/contact] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-20_20:43:11 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:43:11 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:43:11 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-20_20:43:11 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-20_20:43:11 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-06-20_20:45:01 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Starting ContactIdentityServiceApplication using Java 11.0.9 on LAPTOP-M0KEA9MF with PID 10244 (D:\Neha\BiteSpeed\contact-identity-service\target\classes started by HP in D:\Neha\BiteSpeed\contact-identity-service)
+2023-06-20_20:45:01 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-20_20:45:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-20_20:45:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+2023-06-20_20:45:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-06-20_20:45:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:45:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-20_20:45:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-20_20:45:01 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/contact] - Initializing Spring embedded WebApplicationContext
+2023-06-20_20:45:01 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 787 ms
+2023-06-20_20:45:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-06-20_20:45:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-06-20_20:45:01 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/db'. Database available at 'jdbc:h2:mem:contactDB'
+2023-06-20_20:45:01 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-20_20:45:01 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-06-20_20:45:01 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20_20:45:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:45:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path '/contact'
+2023-06-20_20:45:01 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Started ContactIdentityServiceApplication in 1.442 seconds (JVM running for 112.829)
+2023-06-20_20:45:01 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-06-20_20:45:01 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-20_20:45:01 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:45:01 [Thread-8] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-06-20_20:45:01 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:45:01 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:45:01 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-20_20:45:01 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2023-06-20_20:45:01 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2023-06-20_20:46:24 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Starting ContactIdentityServiceApplication using Java 11.0.9 on LAPTOP-M0KEA9MF with PID 10244 (D:\Neha\BiteSpeed\contact-identity-service\target\classes started by HP in D:\Neha\BiteSpeed\contact-identity-service)
+2023-06-20_20:46:24 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-20_20:46:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-20_20:46:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2023-06-20_20:46:24 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-06-20_20:46:24 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:46:24 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-20_20:46:24 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-20_20:46:24 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/contact] - Initializing Spring embedded WebApplicationContext
+2023-06-20_20:46:24 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 801 ms
+2023-06-20_20:46:24 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2023-06-20_20:46:24 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2023-06-20_20:46:24 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/db'. Database available at 'jdbc:h2:mem:contactDB'
+2023-06-20_20:46:24 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-20_20:46:24 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-06-20_20:46:24 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20_20:46:24 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:46:24 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path '/contact'
+2023-06-20_20:46:24 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Started ContactIdentityServiceApplication in 1.53 seconds (JVM running for 195.604)
+2023-06-20_20:46:24 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-06-20_20:46:24 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-20_20:46:24 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:46:24 [Thread-12] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-06-20_20:46:24 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:46:24 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:46:24 [Thread-12] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-20_20:46:24 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2023-06-20_20:46:24 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2023-06-20_20:46:28 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Starting ContactIdentityServiceApplication using Java 11.0.9 on LAPTOP-M0KEA9MF with PID 10244 (D:\Neha\BiteSpeed\contact-identity-service\target\classes started by HP in D:\Neha\BiteSpeed\contact-identity-service)
+2023-06-20_20:46:28 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-20_20:46:28 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-20_20:46:28 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2023-06-20_20:46:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-06-20_20:46:28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:46:28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-20_20:46:28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-20_20:46:28 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/contact] - Initializing Spring embedded WebApplicationContext
+2023-06-20_20:46:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 573 ms
+2023-06-20_20:46:28 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2023-06-20_20:46:28 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2023-06-20_20:46:28 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/db'. Database available at 'jdbc:h2:mem:contactDB'
+2023-06-20_20:46:28 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-20_20:46:28 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-06-20_20:46:28 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20_20:46:28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+2023-06-20_20:46:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path '/contact'
+2023-06-20_20:46:28 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Started ContactIdentityServiceApplication in 1.133 seconds (JVM running for 199.689)
+2023-06-20_20:46:28 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-06-20_20:46:28 [http-nio-8000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/contact] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20_20:46:28 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-20_20:46:28 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-06-20_20:46:28 [http-nio-8000-exec-4] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 67 ms
+2023-06-20_20:46:28 [http-nio-8000-exec-7] INFO  c.n.b.c.s.ContactIdentityServiceImpl - created Primary contact with id: 1
+2023-06-20_20:46:28 [http-nio-8000-exec-8] INFO  c.n.b.c.s.ContactIdentityServiceImpl - linked contact not present for existing contact
+2023-06-20_20:46:28 [http-nio-8000-exec-8] INFO  c.n.b.c.s.ContactIdentityServiceImpl - created Secondary contact with id: 2
+2023-06-20_20:46:28 [http-nio-8000-exec-10] INFO  c.n.b.c.s.ContactIdentityServiceImpl - linked contact present for existing contact
+2023-06-20_20:46:28 [http-nio-8000-exec-1] INFO  c.n.b.c.s.ContactIdentityServiceImpl - linked contact not present for existing contact
+2023-06-20_20:46:28 [http-nio-8000-exec-3] INFO  c.n.b.c.s.ContactIdentityServiceImpl - created Primary contact with id: 3
+2023-06-20_20:46:28 [http-nio-8000-exec-4] INFO  c.n.b.c.s.ContactIdentityServiceImpl - updated contact with id: 3 to secondary
