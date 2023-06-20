@@ -1,6 +1,9 @@
 package com.neha.bitespeed.contactIdentity.service;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedHashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -86,6 +89,28 @@ public class ContactIdentityServiceImpl implements ContactIdentityService{
 				if(isCustomerEmailProvided) {
 					ContactDetail contactDetail = contactDetailRepo.save(newContact);
 					log.info("created Secondary contact with id: {}", contactDetail.getId());
+				}
+			}
+			
+			// 3. when a contact with existing phoneNumber and existing email is passed as request
+			else if(contactDetailByEmail.isPresent() && contactDetailByPhone.isPresent()) {
+				
+				ContactDetail linkedContactByEmail = contactDetailByEmail.get().getLinkedContact();
+				ContactDetail linkedContactByPhone = contactDetailByPhone.get().getLinkedContact();
+				
+				// when both contacts are primary, the older contact will remain primary & later one will be changed to secondary
+				if(Optional.ofNullable(linkedContactByEmail).isEmpty() && Optional.ofNullable(linkedContactByPhone).isEmpty()) {
+					
+					ContactDetail oldContact = Collections.min(Arrays.asList(contactDetailByEmail.get(), contactDetailByPhone.get()), Comparator.comparing(c -> c.getId()));
+					newContact = Collections.max(Arrays.asList(contactDetailByEmail.get(), contactDetailByPhone.get()), Comparator.comparing(c -> c.getId()));
+					
+					newContact.setLinkedContact(oldContact);
+					newContact.setLinkPrecedence(LinkPrecedence.SECONDARY);
+					newContact.setUpdatedAt(LocalDateTime.now());
+						
+					ContactDetail contactDetail = contactDetailRepo.save(newContact);
+					log.info("updated contact with id: {} to secondary", contactDetail.getId());
+					
 				}
 				
 			}
