@@ -1,0 +1,56 @@
+2023-06-20_20:18:59 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Starting ContactIdentityServiceApplication using Java 11.0.9 on LAPTOP-M0KEA9MF with PID 5740 (D:\Neha\BiteSpeed\contact-identity-service\target\classes started by HP in D:\Neha\BiteSpeed\contact-identity-service)
+2023-06-20_20:18:59 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-20_20:18:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-20_20:18:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2023-06-20_20:18:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-06-20_20:18:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-20_20:18:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-20_20:18:59 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/contact] - Initializing Spring embedded WebApplicationContext
+2023-06-20_20:18:59 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 834 ms
+2023-06-20_20:18:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Starting...
+2023-06-20_20:18:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Start completed.
+2023-06-20_20:18:59 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/db'. Database available at 'jdbc:h2:mem:contactDB'
+2023-06-20_20:18:59 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-20_20:18:59 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-20_20:18:59 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-20_20:18:59 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-20_20:18:59 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-06-20_20:18:59 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20_20:18:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path '/contact'
+2023-06-20_20:18:59 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Started ContactIdentityServiceApplication in 1.985 seconds (JVM running for 3521.435)
+2023-06-20_20:18:59 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-06-20_20:18:59 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-20_20:18:59 [Thread-80] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-06-20_20:18:59 [Thread-80] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-20_20:18:59 [Thread-80] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-20_20:18:59 [Thread-80] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown initiated...
+2023-06-20_20:18:59 [Thread-80] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown completed.
+2023-06-20_20:20:51 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Starting ContactIdentityServiceApplication using Java 11.0.9 on LAPTOP-M0KEA9MF with PID 5740 (D:\Neha\BiteSpeed\contact-identity-service\target\classes started by HP in D:\Neha\BiteSpeed\contact-identity-service)
+2023-06-20_20:20:51 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-20_20:20:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-20_20:20:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2023-06-20_20:20:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-06-20_20:20:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-20_20:20:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-20_20:20:51 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/contact] - Initializing Spring embedded WebApplicationContext
+2023-06-20_20:20:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 282 ms
+2023-06-20_20:20:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Starting...
+2023-06-20_20:20:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-21 - Start completed.
+2023-06-20_20:20:51 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/db'. Database available at 'jdbc:h2:mem:contactDB'
+2023-06-20_20:20:51 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-20_20:20:51 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-06-20_20:20:51 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-20_20:20:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path '/contact'
+2023-06-20_20:20:51 [restartedMain] INFO  c.n.b.c.ContactIdentityServiceApplication - Started ContactIdentityServiceApplication in 0.577 seconds (JVM running for 3631.884)
+2023-06-20_20:20:51 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-06-20_20:20:51 [http-nio-8000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/contact] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20_20:20:51 [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-20_20:20:51 [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-06-20_20:20:51 [http-nio-8000-exec-2] INFO  c.n.b.c.s.ContactIdentityServiceImpl - created Primary contact with id: 1
+2023-06-20_20:20:51 [http-nio-8000-exec-3] INFO  c.n.b.c.s.ContactIdentityServiceImpl - linked contact not present for existing contact
+2023-06-20_20:20:51 [http-nio-8000-exec-3] INFO  c.n.b.c.s.ContactIdentityServiceImpl - created Secondary contact with id: 2
+2023-06-20_20:20:51 [http-nio-8000-exec-4] INFO  c.n.b.c.s.ContactIdentityServiceImpl - linked contact not present for existing contact
+2023-06-20_20:20:51 [http-nio-8000-exec-5] INFO  c.n.b.c.s.ContactIdentityServiceImpl - linked contact present for existing contact
+2023-06-20_20:20:51 [http-nio-8000-exec-6] INFO  c.n.b.c.s.ContactIdentityServiceImpl - linked contact not present for existing contact
+2023-06-20_20:20:51 [http-nio-8000-exec-9] INFO  c.n.b.c.s.ContactIdentityServiceImpl - created Primary contact with id: 3
+2023-06-20_20:20:51 [http-nio-8000-exec-10] INFO  c.n.b.c.s.ContactIdentityServiceImpl - updated contact with id: 3 to secondary

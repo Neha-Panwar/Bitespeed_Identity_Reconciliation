@@ -1,0 +1,4 @@
+2023-06-20_20:20:51 [http-nio-8000-exec-8] ERROR c.n.b.c.e.GlobalExceptionHandler - Invalid Request - Email and Phone number not provided.
+2023-06-20_20:20:51 [http-nio-8000-exec-2] ERROR c.n.b.c.e.GlobalExceptionHandler - No new info provided. Customers with given details already exist.
+2023-06-20_20:20:51 [http-nio-8000-exec-4] ERROR c.n.b.c.e.GlobalExceptionHandler - No new info provided. Customers with given details already exist.
+2023-06-20_20:20:51 [http-nio-8000-exec-5] ERROR c.n.b.c.e.GlobalExceptionHandler - No new info provided. Customers with given details already exist.
