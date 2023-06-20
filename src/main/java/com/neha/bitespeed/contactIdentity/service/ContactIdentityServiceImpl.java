@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 
 import com.neha.bitespeed.contactIdentity.dto.CustomerRequestDTO;
 import com.neha.bitespeed.contactIdentity.dto.CustomerResponseDTO;
+import com.neha.bitespeed.contactIdentity.exception.CustomerAlreadyExistException;
+import com.neha.bitespeed.contactIdentity.exception.InvalidCustomerRequestException;
 import com.neha.bitespeed.contactIdentity.model.ContactDetail;
 import com.neha.bitespeed.contactIdentity.model.LinkPrecedence;
 import com.neha.bitespeed.contactIdentity.repository.ContactDetailRepository;
@@ -27,7 +29,7 @@ public class ContactIdentityServiceImpl implements ContactIdentityService{
 	private ContactDetailRepository contactDetailRepo;
 	
 	@Override
-	public CustomerResponseDTO registerCustomer(CustomerRequestDTO customerRequest) {
+	public CustomerResponseDTO registerCustomer(CustomerRequestDTO customerRequest) throws CustomerAlreadyExistException, InvalidCustomerRequestException {
 		CustomerResponseDTO customerResponse = new CustomerResponseDTO();
 		ContactDetail newContact = new ContactDetail();
 		
@@ -112,10 +114,11 @@ public class ContactIdentityServiceImpl implements ContactIdentityService{
 					log.info("updated contact with id: {} to secondary", contactDetail.getId());
 					
 				}
+				else {
+					throw new CustomerAlreadyExistException("No new info provided. Customers with given details already exist.");
+				}
 				
 			}
-			
-			
 			
 			// setting customer response
 			Set<String> emails = new LinkedHashSet<>();
@@ -155,7 +158,10 @@ public class ContactIdentityServiceImpl implements ContactIdentityService{
 		return customerResponse;
 	}
 
-	private boolean isCustomerRegistered(CustomerRequestDTO customerRequest) {
+	private boolean isCustomerRegistered(CustomerRequestDTO customerRequest) throws InvalidCustomerRequestException {
+		if(Optional.ofNullable(customerRequest.getEmail()).isEmpty() && Optional.ofNullable(customerRequest.getPhoneNumber()).isEmpty()) {
+			throw new InvalidCustomerRequestException("Invalid Request - Email and Phone number not provided.");
+		}
 		if(contactDetailRepo.existsByEmail(customerRequest.getEmail()) || contactDetailRepo.existsByPhoneNumber(customerRequest.getPhoneNumber())) {
 			return true;
 		}

@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.neha.bitespeed.contactIdentity.dto.CustomerRequestDTO;
 import com.neha.bitespeed.contactIdentity.dto.CustomerResponseDTO;
+import com.neha.bitespeed.contactIdentity.exception.CustomerAlreadyExistException;
+import com.neha.bitespeed.contactIdentity.exception.InvalidCustomerRequestException;
 import com.neha.bitespeed.contactIdentity.service.ContactIdentityService;
 
 @RestController
@@ -18,7 +20,7 @@ public class ContactIdentityController {
 	private ContactIdentityService identityService;
 	
 	@PostMapping(value = "/identify")
-	public CustomerResponseDTO registerCustomer(@Valid @RequestBody CustomerRequestDTO customerRequest) {
+	public CustomerResponseDTO registerCustomer(@Valid @RequestBody CustomerRequestDTO customerRequest) throws CustomerAlreadyExistException, InvalidCustomerRequestException {
 		
 		return identityService.registerCustomer(customerRequest);
 	}

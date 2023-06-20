@@ -1,5 +1,9 @@
 package com.neha.bitespeed.contactIdentity.exception;
 
-public class CustomerAlreadyExistException {
+@SuppressWarnings("serial")
+public class CustomerAlreadyExistException extends Exception {
 
+	public CustomerAlreadyExistException(String message) {
+		super(message);
+	}
 }
